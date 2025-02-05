@@ -1,0 +1,1832 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11" pages="7">
+  <diagram name="Distance" id="p55zV_6uvnySDCHVmCS-">
+    <mxGraphModel dx="2181" dy="1957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5gH13s99QwhvehGly_Yr-1" value="calculate_distance(x1: float, y1:float, x2: float, y2:float) -&gt; float" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontColor=light-dark(#ffffff, #ededed);fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-71.26" y="70" width="445.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-2" value="y_delta = y2 - y1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="60.99" y="170" width="181" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-3" value="x_delta = x2 - x1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="61" y="290" width="181" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-4" value="distance = math.sqrt(y_delta**2 + x_delta**2)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-0.3799999999999999" y="410" width="303.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-5" value="return distance" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="84.5" y="510" width="134" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-6" value="Oblicz różnicę w współrzędnych y" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="5gH13s99QwhvehGly_Yr-1" target="5gH13s99QwhvehGly_Yr-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-7" value="Oblicz różnicę w współrzędnych x" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="5gH13s99QwhvehGly_Yr-2" target="5gH13s99QwhvehGly_Yr-3" edge="1">
+          <mxGeometry x="0.0141" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-8" value="Oblicz odległość na podstawie wzoru Pitagorasa" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="5gH13s99QwhvehGly_Yr-3" target="5gH13s99QwhvehGly_Yr-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-9" value="Zwróć wartość" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="5gH13s99QwhvehGly_Yr-4" target="5gH13s99QwhvehGly_Yr-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5gH13s99QwhvehGly_Yr-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Obliczanie długości pomiędzy dwoma punktami w układzie kartezjańskim&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="17.82" y="-50" width="267.37" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Fu9NRM4lbWyaDEOFjkph" name="Order lines">
+    <mxGraphModel dx="1032" dy="1753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GyckBLWMK3wZiYX941Pi-1" value="order_lines(line_features: str | arcpy.Result) -&gt; arcpy.Result" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" parent="1" vertex="1">
+          <mxGeometry x="305.25" y="20" width="438.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-2" value="line_features = f&#39;{str(line_features).split(&#39;.&#39;)[0]}&#39;" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="335" y="135" width="379" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GyckBLWMK3wZiYX941Pi-3" target="KGsXXZNHeJjhVYOc_2rE-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Stwórz tymczasowy słownik listą jako domyślna wartość&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-81" vertex="1" connectable="0">
+          <mxGeometry x="0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-3" value="lines_dangles = arcpy.management.FeatureVerticesToPoints&#xa;(in_features=line_features,&#xa;        out_feature_class=f&quot;{line_features}_line_dangles&quot;,&#xa;        point_location=&quot;DANGLE&quot; )" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="297.25" y="260" width="454.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-8" value="lines_beginings = arcpy.management.FeatureVerticesToPoints&#xa;(in_features=line_features,&#xa;        out_feature_class=f&quot;{line_features}_line_beginings&quot;,&#xa;        point_location=&quot;START&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="311.5" y="1200" width="445" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GyckBLWMK3wZiYX941Pi-9" target="KGsXXZNHeJjhVYOc_2rE-84" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-26" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Wybierz id tych linii, które posiadają jeden (!) wiszący wierzchołek,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;który jest jednocześnie punktem początkowym geometrii&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-23" vertex="1" connectable="0">
+          <mxGeometry x="0.6558" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-9" value="lines_dangling_begingings =arcpy.management.SelectLayerByLocation&#xa;(in_layer=lines_dangles,&#xa;        overlap_type=&quot;ARE_IDENTICAL_TO&quot;,&#xa;        select_features=lines_beginings,&#xa;        search_distance=&quot;0 Meters&quot;,&#xa;        selection_type=&quot;NEW_SELECTION&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="283.25" y="1370" width="501.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GyckBLWMK3wZiYX941Pi-12" target="GyckBLWMK3wZiYX941Pi-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-35" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Odwróć geometrię linii&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="KGsXXZNHeJjhVYOc_2rE-109" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-12" value="lines_to_reverse = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=line_features,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;where_clause=f&quot;FID IN ({&#39;,&#39;.join(lines_to_reverse_ids)})&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="131.5" y="1864" width="420" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GyckBLWMK3wZiYX941Pi-13" target="GyckBLWMK3wZiYX941Pi-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="342" y="2120" />
+              <mxPoint x="508" y="2120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-13" value="arcpy.edit.FlipLine(lines_to_reverse)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="180" y="2030" width="323" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-15" value="arcpy.management.Delete(lines_dangles)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="353" y="2180" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GyckBLWMK3wZiYX941Pi-16" target="KGsXXZNHeJjhVYOc_2rE-105" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-16" value="arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=line_features,&#xa;  selection_type=&#39;CLEAR_SELECTION&#39;,&#xa;  where_clause=&#39;1=1&#39;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="314" y="2320" width="388" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-18" value="Zameń arcpy.Result na nazwę scieżki do danych bez rozszerzenia" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="GyckBLWMK3wZiYX941Pi-1" target="GyckBLWMK3wZiYX941Pi-2" edge="1">
+          <mxGeometry x="0.0136" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-19" value="Pozyskaj wiszące wierzchołki z warstwy liniowej" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="GyckBLWMK3wZiYX941Pi-2" target="GyckBLWMK3wZiYX941Pi-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyckBLWMK3wZiYX941Pi-25" value="Wyberz te punkty, &#xa;które są wierzchołkami wiszącymi oraz punktami startowymi" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontStyle=2;fontSize=13;" parent="1" source="GyckBLWMK3wZiYX941Pi-8" target="GyckBLWMK3wZiYX941Pi-9" edge="1">
+          <mxGeometry x="0.0131" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-1" value="&lt;font style=&quot;font-size: 19px; color: rgb(255, 255, 255);&quot;&gt;with arcpy.da.SearchCursor(l&lt;span style=&quot;background-color: transparent;&quot;&gt;ines_dangles, [&#39;OID@&#39;, &#39;ORIG_FID&#39;]) as cursor:&lt;/span&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="124.5" y="420" width="800" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-2" target="KGsXXZNHeJjhVYOc_2rE-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdego id wierzchołka wiszącego i id lini&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-74" vertex="1" connectable="0">
+          <mxGeometry x="-0.0667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-2" value="temp = defaultdict(list)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="303.5" y="110" width="193" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-3" target="KGsXXZNHeJjhVYOc_2rE-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="237" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-8" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Stwórz listę z id linii,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;które mają dwa wiszące wierzchołki&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-76" vertex="1" connectable="0">
+          <mxGeometry x="0.3" relative="1" as="geometry">
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;fontStyle=2" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-3" target="KGsXXZNHeJjhVYOc_2rE-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-6" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Przyporządkuj id wierzchołków do id lini&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-77" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-3" value="for fid, line_fid in cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="294" y="205" width="212" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-4" target="KGsXXZNHeJjhVYOc_2rE-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-4" value="temp[line_fid].append(str(fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="525.5" y="255" width="223.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-24" target="KGsXXZNHeJjhVYOc_2rE-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-17" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdej pary id linii i listy id wierzchołków wiszących&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.1005" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-24" value="double_dangle_lines_ids = []" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="121.5" y="293" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-26" target="KGsXXZNHeJjhVYOc_2rE-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-54" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;background-color: rgb(251, 251, 251); font-size: 13px;&quot;&gt;&lt;i&gt;&lt;span&gt;Czy linia ma&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;/font&gt;&lt;i style=&quot;font-size: 13px; background-color: rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span&gt;dwa wiszące&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;i style=&quot;font-size: 13px; background-color: rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span&gt;wieszchołki?&lt;/span&gt;&lt;/i&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="7E9qtXCL5Vgg80z78zxV-45" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-26" value="for line_fid, fids in temp.items():" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="106.5" y="410" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-28" target="KGsXXZNHeJjhVYOc_2rE-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="391" y="540" />
+              <mxPoint x="302" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-28" value="double_dangle_lines_ids.append(str(line_fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="225.5" y="560" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-31" target="KGsXXZNHeJjhVYOc_2rE-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-55" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Nie&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-47" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="KGsXXZNHeJjhVYOc_2rE-1" source="KGsXXZNHeJjhVYOc_2rE-31" target="KGsXXZNHeJjhVYOc_2rE-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-53" value="&lt;i style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dodaj id linii do listy linii&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;z dwoma wierzchołkami&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-52" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-56" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Tak&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-52" vertex="1" connectable="0">
+          <mxGeometry x="-0.9" relative="1" as="geometry">
+            <mxPoint x="15" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-31" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if len(fids) == 2:&lt;/b&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="KGsXXZNHeJjhVYOc_2rE-1" vertex="1">
+          <mxGeometry x="605.5" y="460" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KGsXXZNHeJjhVYOc_2rE-26" target="GyckBLWMK3wZiYX941Pi-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="1090" />
+              <mxPoint x="534" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-10" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i style=&quot;&quot;&gt;Wyjdź z pętli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-79" vertex="1" connectable="0">
+          <mxGeometry x="0.25" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-20" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;i style=&quot;&quot;&gt;Pozyskaj z warstwy liniowej punkty początkowe geometrii&lt;/i&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-79" vertex="1" connectable="0">
+          <mxGeometry x="0.9" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-82" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;with arcpy.da.SearchCursor(lines_dangling_begingings, [&quot;ORIG_FID&quot;],&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;where_clause=f&quot;ORIG_FID NOT IN ({&#39;,&#39;.join(double_dangle_lines_ids)})&quot;) as cursor:&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=79;fillColor=#6D8764;" parent="1" vertex="1">
+          <mxGeometry x="199" y="1540" width="670" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-84" value="lines_to_reverse_ids = [str(row[0]) for row in cursor]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="KGsXXZNHeJjhVYOc_2rE-82" vertex="1">
+          <mxGeometry x="143.75" y="139" width="382.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KGsXXZNHeJjhVYOc_2rE-101" target="GyckBLWMK3wZiYX941Pi-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="714" y="2120" />
+              <mxPoint x="508" y="2120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-38" value="&lt;font style=&quot;&quot;&gt;Nie&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="7E9qtXCL5Vgg80z78zxV-34" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-39" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Usuń pliki tymczasowe&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=3" parent="7E9qtXCL5Vgg80z78zxV-34" vertex="1" connectable="0">
+          <mxGeometry x="0.5" y="-15" relative="1" as="geometry">
+            <mxPoint x="-30" y="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-101" value="&lt;span style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;&lt;font style=&quot;&quot;&gt;if lines_to_reverse_ids:&lt;/font&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;gradientColor=none;strokeColor=#d79b00;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="614" y="1810" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-105" value="&lt;b&gt;STOP&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="460" y="2450" width="96" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KGsXXZNHeJjhVYOc_2rE-107" target="GyckBLWMK3wZiYX941Pi-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-31" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Wyczyść selekcję&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.07200000000000001" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-107" value="arcpy.management.Delete(lines_beginings)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="353" y="2220" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KGsXXZNHeJjhVYOc_2rE-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.992;entryY=0.437;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="KGsXXZNHeJjhVYOc_2rE-101" target="GyckBLWMK3wZiYX941Pi-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-36" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Zaznacz linie, które trzeba odwrócić&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KGsXXZNHeJjhVYOc_2rE-115" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-240" y="-65" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-37" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;Tak&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" parent="KGsXXZNHeJjhVYOc_2rE-115" vertex="1" connectable="0">
+          <mxGeometry x="-0.15" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="KGsXXZNHeJjhVYOc_2rE-84" target="KGsXXZNHeJjhVYOc_2rE-101" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7E9qtXCL5Vgg80z78zxV-27" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Czy istniej taka geometria?&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7E9qtXCL5Vgg80z78zxV-24" vertex="1" connectable="0">
+          <mxGeometry y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d_uxa-HPvuCeQbq9SkT3-1" value="&lt;b&gt;Uporządowanie linii tak, aby ich punkty początkowe lini nie były ich wierzchołkami wiszącymi&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="342.62" y="-100" width="363.75" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-2YnK9FGAm3t_jURFzoR" name="Rank Rivers">
+    <mxGraphModel dx="1876" dy="2231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-1" target="11HhZKcnD1Xcwr4UYq39-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B4ysiMp27J-q5RQ0TpI3-1" value="&lt;span style=&quot;font-size: 13px; font-style: italic;&quot;&gt;Pozyskaj wiszące wierzchołki z rzek&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-1" value="rank_rivers(rivernet: str | arcpy.Result, rank_field_name: str) -&gt; None" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="231" y="-430" width="479" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-2" target="tP-nFNjuMWulpFqO5DTq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avE9iDuIp8WNCe7Sol9A-1" value="&lt;i style=&quot;font-size: 13px;&quot;&gt;Stwórz tymczasowy słownik listą jako domyślna wartość&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-27">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-2" value="river_dangles = arcpy.management.FeatureVerticesToPoints&#xa;(in_features=rivernet,&#xa;        out_feature_class=f&quot;{rivernet.split(&#39;.&#39;)[0]}_dangling_vertices&quot;,&#xa;        point_location=&quot;DANGLE&quot; )" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="249.12" y="-320" width="442.75" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="LFDdBFQlC7dQDCjhq972-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-5" target="11HhZKcnD1Xcwr4UYq39-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LADtiQJocKEeBLahUPkh-2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zainicjalizuj zmienne potrzebne do pętli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LFDdBFQlC7dQDCjhq972-2">
+          <mxGeometry x="-0.0071" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-5" value="main_rivers_selection = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=rivernet,&#xa;        selection_type=&quot;NEW_SELECTION&quot;,&#xa;        where_clause=f&quot;FID IN ({&#39;,&#39;.join(main_rivers_ids)})&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="730" width="478" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-6" value="rank = 1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="366" y="910" width="207" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-7" value="tributaries_count = 1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="366" y="960" width="207" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LADtiQJocKEeBLahUPkh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-8" target="11HhZKcnD1Xcwr4UYq39-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LADtiQJocKEeBLahUPkh-4" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Przydziel rangę 1 rzekom głównym&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LADtiQJocKEeBLahUPkh-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-8" value="tributaries_selection = None" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="366" y="1010" width="207" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PKOfuZisPnEekpHHRwyB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-9" target="11HhZKcnD1Xcwr4UYq39-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PKOfuZisPnEekpHHRwyB-2" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dopóki są jeszcze jakieś niezaznaczone dopływy&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PKOfuZisPnEekpHHRwyB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-9" value="arcpy.management.CalculateField&#xa;(in_table=main_rivers_selection,&#xa;        field=rank_field_name,&#xa;        field_type=&quot;SHORT&quot;,&#xa;        expression=rank,&#xa;        expression_type=&quot;PYTHON3&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="342" y="1120" width="254" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-11" target="11HhZKcnD1Xcwr4UYq39-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-16" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Wybierz tylko te dopływy, które nie mają przydzielonej rangi&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-11" value="tributaries_selection = arcpy.management.SelectLayerByLocation&#xa;(in_layer=rivernet,&#xa;            overlap_type=&quot;INTERSECT&quot;,&#xa;            select_features=tributaries_selection or main_rivers_selection,&#xa;            search_distance=&quot;0 Meters&quot;,&#xa;            selection_type=&quot;NEW_SELECTION&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1410" width="500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-12" target="11HhZKcnD1Xcwr4UYq39-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-17" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pozyskaj liczbę dopływów, które zostały wybrane&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-12" value="tributaries_selection = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=tributaries_selection,&#xa;            selection_type=&quot;SUBSET_SELECTION&quot;,&#xa;            where_clause=f&quot;{rank_field_name} = 0&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="565" y="1600" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-13" target="11HhZKcnD1Xcwr4UYq39-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-18" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zwiększ rangę&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-13" value="tributaries_count = int(arcpy.management.GetCount(tributaries_selection)[0])" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="551.5" y="1754" width="497" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-14" value="rank += 1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="752.25" y="1870" width="95.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-15" target="11HhZKcnD1Xcwr4UYq39-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-15" value="arcpy.management.CalculateField&#xa;(in_table=tributaries_selection,&#xa;field=rank_field_name,&#xa;expression=rank,&#xa;expression_type=&quot;PYTHON3&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="656" y="1990" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-16" target="11HhZKcnD1Xcwr4UYq39-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-16" value="arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=rivernet,&#xa;        selection_type=&quot;CLEAR_SELECTION&quot;,&#xa;        where_clause=&quot;1=1&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1480" width="363" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-17" value="STOP" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="162.25" y="1640" width="98.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LFDdBFQlC7dQDCjhq972-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-36" target="11HhZKcnD1Xcwr4UYq39-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LADtiQJocKEeBLahUPkh-1" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Wybierz rzeki główne&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="LFDdBFQlC7dQDCjhq972-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-36" value="Zaznacz linie, które trzeba odwrócić" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="330.5" y="600" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-38" target="11HhZKcnD1Xcwr4UYq39-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="1335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-15" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wybierz dopływy, które się przecinają się&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;z poprzednią selekcją lub rzekami głównymi&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-5">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-38" target="11HhZKcnD1Xcwr4UYq39-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="212" y="1335" />
+              <mxPoint x="212" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-24" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wyjdź z pętli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-14">
+          <mxGeometry x="-0.5" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-26" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wyczyść selekcję&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-14">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11HhZKcnD1Xcwr4UYq39-38" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;while tributaries_count &amp;gt; 0:&lt;/font&gt;&lt;/b&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="341" y="1310" width="256" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-1" value="&lt;font style=&quot;font-size: 19px; color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;with arcpy.da.SearchCursor(river&lt;span style=&quot;background-color: transparent;&quot;&gt;_dangles, [&#39;OID@&#39;, &#39;ORIG_FID&#39;]) as cursor:&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="70" y="-193" width="800" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-4" target="tP-nFNjuMWulpFqO5DTq-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdego id wierzchołka wiszącego i id rzeki&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-2">
+          <mxGeometry x="-0.0667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-4" value="temp = defaultdict(list)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="303.5" y="110" width="193" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-9" target="tP-nFNjuMWulpFqO5DTq-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="237" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-6" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Stwórz listę z id rzeki,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;które mają dwa wiszące wierzchołki&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-5">
+          <mxGeometry x="0.3" relative="1" as="geometry">
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;fontStyle=2" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-9" target="tP-nFNjuMWulpFqO5DTq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-8" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Przyporządkuj id wierzchołków do id rzeki&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-7">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-9" value="for fid, river_fidin cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="294" y="205" width="212" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-11" target="tP-nFNjuMWulpFqO5DTq-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-11" value="temp[river_fid].append(str(fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="525.5" y="255" width="223.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-14" target="tP-nFNjuMWulpFqO5DTq-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-13" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdej pary id rzeki i listy id wierzchołków wiszących&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-12">
+          <mxGeometry x="-0.1005" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-14" value="main_rivers_ids = []" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="121.5" y="293" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-17" target="tP-nFNjuMWulpFqO5DTq-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-16" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;background-color: rgb(251, 251, 251); font-size: 13px;&quot;&gt;&lt;i style=&quot;&quot;&gt;Czy rzeka ma&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;i style=&quot;font-size: 13px; background-color: rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span&gt;dwa wiszące&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;i style=&quot;font-size: 13px; background-color: rgb(251, 251, 251); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;wieszchołki?&lt;/i&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-17" value="for river_fid, fids in temp.items():" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="106.5" y="410" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-19" target="tP-nFNjuMWulpFqO5DTq-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="391" y="540" />
+              <mxPoint x="302" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-19" value="main_rivers_ids.append(str(river_fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="225.5" y="560" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-25" target="tP-nFNjuMWulpFqO5DTq-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-21" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Nie&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-20">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="tP-nFNjuMWulpFqO5DTq-1" source="tP-nFNjuMWulpFqO5DTq-25" target="tP-nFNjuMWulpFqO5DTq-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-23" value="&lt;i style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dodaj id rzeki do listy linii&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;z dwoma wierzchołkami&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-24" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Tak&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tP-nFNjuMWulpFqO5DTq-22">
+          <mxGeometry x="-0.9" relative="1" as="geometry">
+            <mxPoint x="15" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tP-nFNjuMWulpFqO5DTq-25" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if len(fids) == 2:&lt;/b&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" vertex="1" parent="tP-nFNjuMWulpFqO5DTq-1">
+          <mxGeometry x="605.5" y="460" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="B4ysiMp27J-q5RQ0TpI3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tP-nFNjuMWulpFqO5DTq-17" target="11HhZKcnD1Xcwr4UYq39-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="241" y="500" />
+              <mxPoint x="470" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EgLdeiItYb3tXpiBfbPR-1" value="&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;font&gt;Usuń plik tymczasowy&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="B4ysiMp27J-q5RQ0TpI3-3">
+          <mxGeometry x="0.9" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.512;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="11HhZKcnD1Xcwr4UYq39-14" target="11HhZKcnD1Xcwr4UYq39-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iISIxVAZIeg3Q3_bOUuZ-21" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Przydziel obecną rangę do wybranych dopływów&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iISIxVAZIeg3Q3_bOUuZ-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KI_A4VZXXWmT0MmkdGM9-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Przydzielenie rangi rzekom w sieci rzecznej&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="255.5" y="-500" width="430" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HL06024nCSt5mSD1rLMM" name="Intersections">
+    <mxGraphModel dx="733" dy="1596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="j7ME8ySMR5yjaV49tTLh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="j7ME8ySMR5yjaV49tTLh-3" target="j7ME8ySMR5yjaV49tTLh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j7ME8ySMR5yjaV49tTLh-2" value="&lt;span style=&quot;font-size: 13px; font-style: italic;&quot;&gt;Pozyskaj wiszące wierzchołki warstwy liniowej&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j7ME8ySMR5yjaV49tTLh-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j7ME8ySMR5yjaV49tTLh-3" value="get_intersection_points(line_feature: str | arcpy.Result) -&gt; arcpy.Result:" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="231" y="-470" width="479" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="j7ME8ySMR5yjaV49tTLh-4" target="08z5bHq_3klUb-g1QUcX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-8" value="&lt;span style=&quot;font-size: 13px; font-style: italic;&quot;&gt;Pozyskaj punkty startowe i końcowe obiektów warstwy liniowej&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OppNF3kOmVemvOKh9j4s-7">
+          <mxGeometry x="0.0069" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j7ME8ySMR5yjaV49tTLh-4" value="start_end_points = arcpy.management.FeatureVerticesToPoints&#xa;(in_features=line_feature,&#xa;        out_feature_class=&quot;start_end_points&quot;,        point_location=&quot;BOTH_ENDS&quot;)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="249.12" y="-360" width="442.75" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="08z5bHq_3klUb-g1QUcX-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Pozyskanie punktów przecięcia warstwy liniowej&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="231" y="-540" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="08z5bHq_3klUb-g1QUcX-2" target="08z5bHq_3klUb-g1QUcX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-9" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wybierz wszystkie te punkty początkowe i końcowe,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;które nie są wierzchołkami wiszącymi&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OppNF3kOmVemvOKh9j4s-6">
+          <mxGeometry x="-0.0407" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08z5bHq_3klUb-g1QUcX-2" value="dangling_points = arcpy.management.FeatureVerticesToPoints&#xa;(in_features=line_feature,&#xa;        out_feature_class=&quot;dangling_points&quot;,&#xa;        point_location=&quot;DANGLE&quot;)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="249.62" y="-200" width="442.75" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="08z5bHq_3klUb-g1QUcX-3" target="fV_UDHxCMMOEVPPuQpun-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-5" value="&lt;span style=&quot;font-size: 13px; font-style: italic;&quot;&gt;Usuń pliki tymczasowe&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OppNF3kOmVemvOKh9j4s-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="08z5bHq_3klUb-g1QUcX-3" value="intersection_points = arcpy.analysis.SymDiff&#xa;(in_features = start_end_points,&#xa;        update_features = dangling_points,&#xa;        out_feature_class = f&quot;{str(line_feature).split(&#39;.&#39;)[0]}_intersection&quot;,&#xa;        join_attributes = &quot;ONLY_FID&quot;)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="240.81" y="-30" width="460.37" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fV_UDHxCMMOEVPPuQpun-1" value="arcpy.management.Delete(lines_dangles)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="316" y="160" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fV_UDHxCMMOEVPPuQpun-4" target="OppNF3kOmVemvOKh9j4s-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zwróć punkty przecięcia&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OppNF3kOmVemvOKh9j4s-2">
+          <mxGeometry x="-0.0286" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fV_UDHxCMMOEVPPuQpun-4" value="arcpy.management.Delete(lines_beginings)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="316" y="200" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OppNF3kOmVemvOKh9j4s-1" value="return intersection_points" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="370" y="310" width="202" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9uWo1qF1eJceL4KkPKXY" name="Distance From Begining">
+    <mxGraphModel dx="3760" dy="2876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PqiqDFQefFKRgQQCapBt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qGvZKkupxlcZHJE416Fr-1" target="PqiqDFQefFKRgQQCapBt-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pozyskaj rozszerzenie obszaru roboczego&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PqiqDFQefFKRgQQCapBt-2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qGvZKkupxlcZHJE416Fr-1" value="distance_from_begining(&#xa;    lines: str | arcpy.Result, &#xa;    points: str | arcpy.Result,&#xa;    distance_field: str = &quot;Distance&quot;,&#xa;    tolerance: float = 0.001,&#xa;) -&gt; arcpy.Result:" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" parent="1" vertex="1">
+          <mxGeometry x="316" y="-450" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qGvZKkupxlcZHJE416Fr-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Obliczanie długości punktu po linii od punktu początkowego&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="171" y="-510" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PqiqDFQefFKRgQQCapBt-1" target="PqiqDFQefFKRgQQCapBt-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-7" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Stwórz pustą tabelę z roszerzeniem .dbf,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;jeżeli obszar roboczy to geobaza plikowa&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PqiqDFQefFKRgQQCapBt-6" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-1" value="extension = Path(arcpy.env.workspace).suffix" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="281.5" y="-250" width="379" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PqiqDFQefFKRgQQCapBt-5" target="PqiqDFQefFKRgQQCapBt-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-13" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dodaj kolumny z dystansem, id linii oraz id oryginalnego punktu&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PqiqDFQefFKRgQQCapBt-10" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-5" value="distances_table = arcpy.management.CreateTable(&#xa;        out_name=f&quot;distance_table&quot; + (&quot;&quot; if extension.endswith(&quot;gdb&quot;) else &quot;.dbf&quot;))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="206.75" y="-120" width="528.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PqiqDFQefFKRgQQCapBt-9" target="PqiqDFQefFKRgQQCapBt-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-17" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Usuń inne pola niż dodane w poprzednim kroku&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PqiqDFQefFKRgQQCapBt-16" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-9" value="arcpy.management.AddFields&#xa;(in_table=distances_table,&#xa;field_description=&#xa;[(distance_field, &quot;DOUBLE&quot;),&#xa;((line_id_field := &quot;LINE_FID&quot;), &quot;SHORT&quot;),&#xa;((point_id_field := &quot;POINT_FID&quot;), &quot;SHORT&quot;)]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="321" y="30" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="KRaRN-KA2zyMS4NmaV2w-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PqiqDFQefFKRgQQCapBt-14" target="V9ZYJFojFBvcUrYNhpd2-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KRaRN-KA2zyMS4NmaV2w-2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dla każdego id linii i jej geometrii&amp;nbsp;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="KRaRN-KA2zyMS4NmaV2w-1" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PqiqDFQefFKRgQQCapBt-14" value="arcpy.management.DeleteField&#xa;(in_table=distances_table,&#xa;drop_field=[distance_field, line_id_field, origin_id],&#xa;method=&quot;KEEP_FIELDS&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="291" y="230" width="360" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5JQaXJJwDwmiV3b31e_5-1" value="return distances_table" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="377" y="1400" width="188" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="V9ZYJFojFBvcUrYNhpd2-1" value="&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;with (arcpy.da.SearchCursor(lines, [line_id_field, &quot;SHAPE@&quot;]) as line_cursor,&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; arcpy.da.InsertCursor(distances_table, [line_id_field, point_id_field, distance_field]) as table_cursor):&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=90;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-4" y="380" width="950" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="V9ZYJFojFBvcUrYNhpd2-1" source="9zZ-U4pV1h0lWDCP7J3m-14" target="V9ZYJFojFBvcUrYNhpd2-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-39" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Koniec pętli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-26" vertex="1" connectable="0">
+          <mxGeometry x="-0.75" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="V9ZYJFojFBvcUrYNhpd2-1" source="V9ZYJFojFBvcUrYNhpd2-9" target="9zZ-U4pV1h0lWDCP7J3m-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-32" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dokonaj selekcji obecnej linii&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-28" vertex="1" connectable="0">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V9ZYJFojFBvcUrYNhpd2-9" value="for line_id, line_shape in line_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="V9ZYJFojFBvcUrYNhpd2-1" vertex="1">
+          <mxGeometry x="168.5" y="145" width="316.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="V9ZYJFojFBvcUrYNhpd2-1" source="9zZ-U4pV1h0lWDCP7J3m-1" target="9zZ-U4pV1h0lWDCP7J3m-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-33" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wybierz te punkty, które przecinają się z obecnie wybraną linią&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-17" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-1" value="current_line = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=lines,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;where_clause=f&quot;FID = {line_id}&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="V9ZYJFojFBvcUrYNhpd2-1" vertex="1">
+          <mxGeometry x="470" y="250" width="410.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="V9ZYJFojFBvcUrYNhpd2-1" source="9zZ-U4pV1h0lWDCP7J3m-8" target="9zZ-U4pV1h0lWDCP7J3m-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-34" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdego id punktu i jego geometrii&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-18" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-8" value="current_intersections =marcpy.management.SelectLayerByLocation&#xa;(in_layer=points,&#xa;select_features=current_line,&#xa;overlap_type=&quot;INTERSECT&quot;,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;search_distance=f&quot;{tolerance} Meters&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="V9ZYJFojFBvcUrYNhpd2-1" vertex="1">
+          <mxGeometry x="444.5" y="440" width="461.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-9" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;with arcpy.da.SearchCursor(current_intersections,&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;[&quot;OID@&quot;, &quot;SHAPE@&quot;]) as point_cursor:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=100;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="V9ZYJFojFBvcUrYNhpd2-1" vertex="1">
+          <mxGeometry x="258.5" y="610" width="621.5" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="9zZ-U4pV1h0lWDCP7J3m-9" source="9zZ-U4pV1h0lWDCP7J3m-13" target="9zZ-U4pV1h0lWDCP7J3m-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="194" />
+              <mxPoint x="440" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-37" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dodaj wiersz do tabeli&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;i style=&quot;font-size: 13px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;,&amp;nbsp;&lt;/i&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;który zawiera:&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;id obecnej linii,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;id obecnego punktu&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;oraz odległość po linii&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;od punktu początkowego&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;do iterowanego punktu&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;textShadow=0;labelBorderColor=none;" parent="9zZ-U4pV1h0lWDCP7J3m-36" vertex="1" connectable="0">
+          <mxGeometry y="80" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-13" value="for point_id, point_shape in point_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="9zZ-U4pV1h0lWDCP7J3m-9" vertex="1">
+          <mxGeometry x="103.5" y="169" width="316.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="9zZ-U4pV1h0lWDCP7J3m-9" source="9zZ-U4pV1h0lWDCP7J3m-14" target="9zZ-U4pV1h0lWDCP7J3m-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-14" value="table_cursor.insertRow([line_id, point_id, line_shape.measureOnLine(point_shape)])" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="9zZ-U4pV1h0lWDCP7J3m-9" vertex="1">
+          <mxGeometry x="106" y="270" width="311.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="V9ZYJFojFBvcUrYNhpd2-9" target="5JQaXJJwDwmiV3b31e_5-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="560" />
+              <mxPoint x="150" y="1425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-31" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Koniec pętli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zZ-U4pV1h0lWDCP7J3m-40" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zwróć referencję do tabeli&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9zZ-U4pV1h0lWDCP7J3m-30" vertex="1" connectable="0">
+          <mxGeometry x="0.8" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="e4FKrRndt04SLGEzYNKa" name="Mileage">
+    <mxGraphModel dx="3520" dy="5555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6kq8weQtzCc5tSfSYZ_n-28" target="SA2zn3zcyIi2AlwyKrgm-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-17" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Odwróć zaznaczone rzeki&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-6" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6kq8weQtzCc5tSfSYZ_n-28" value="main_rivers_to_reverse = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=rivernet,&#xa;            selection_type=&quot;NEW_SELECTION&quot;,&#xa;            where_clause=f&quot;FID IN ({&#39;,&#39;.join(main_rivers_to_reverse_ids)})&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="370" y="860" width="493" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-1" target="6kq8weQtzCc5tSfSYZ_n-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-16" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dokonaj selekcji rzek głównych do odwrócenia&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-5" vertex="1" connectable="0">
+          <mxGeometry x="0.1" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-1" target="SA2zn3zcyIi2AlwyKrgm-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="192" y="1090" />
+              <mxPoint x="440" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-1" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if main_rivers_to_reverse_ids:&lt;/b&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="62" y="770" width="263" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-3" target="SA2zn3zcyIi2AlwyKrgm-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="617" y="1090" />
+              <mxPoint x="440" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-18" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Uporządkuj kierunek spływu dopływów&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-20" vertex="1" connectable="0">
+          <mxGeometry x="0.75" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-3" value="arcpy.edit.FlipLine(main_rivers_to_reverse)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="450" y="1000" width="333" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-9" target="SA2zn3zcyIi2AlwyKrgm-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-19" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zainicjalizuj nazwy kolumn, które należy dodać do tabeli z kilometrażem&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-13" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-9" value="order_lines(rivernet)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="341.75" y="1160" width="196.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-10" value="distance_field = &quot;Distance&quot;" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="325" y="1280" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-11" value="full_distance_field = &quot;FullDist&quot;" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="325" y="1330" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-12" target="SA2zn3zcyIi2AlwyKrgm-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-20" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pozyskaj punkty przecięcia dopływów z innymi dopływami bądź rzekami głównymi&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-21" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-12" value="path_field = &quot;Path&quot;" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="325" y="1380" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-15" value="arcpy.management.Delete(intersections)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="250" y="2662" width="380" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-17" target="SA2zn3zcyIi2AlwyKrgm-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-195" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Oblicz dystans od początku rzek dla obiektów,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;dla których obliczany jest kilometraż&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-57" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-17" value="arcpy.management.Delete(intersections_mileages)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="250" y="2712" width="380" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-18" value="intersections = get_intersection_points(rivernet)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="266.75" y="1500" width="346.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-18" target="SA2zn3zcyIi2AlwyKrgm-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440.0049999999999" y="1840" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-23" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Oblicz odległość punktów&amp;nbsp; przecięcia od początku poszczególnych rzek&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.0136" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-26" target="ObFdqn2z3Y8Yrg7T5Qme-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-174" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Stwórz tymczasowy słownik&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-65" vertex="1" connectable="0">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-26" value=" intersections_mileages = distance_from_begining(rivernet, intersections, distance_field)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="141.69" y="1632" width="596.62" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-29" value="&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;with arcpy.da.UpdateCursor(intersections_mileages,&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [&quot;LINE_FID&quot;, &quot;POINT_FID&quot;, distance_field]) as intersections_cursor:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=70;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="90" y="1732" width="709.99" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-42" target="ObFdqn2z3Y8Yrg7T5Qme-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-175" value="Dla każdego rekordu&lt;div&gt;&amp;nbsp;z kilometrażu punktów przecięcia&lt;/div&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-53" vertex="1" connectable="0">
+          <mxGeometry x="0.4" relative="1" as="geometry">
+            <mxPoint x="30" y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-42" value=" inter_mileages = dict()" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="256.69000000000005" y="120" width="186.63" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-44" target="ObFdqn2z3Y8Yrg7T5Qme-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-178" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Czy id punktu przecięcia się nie powtarza?&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-54" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-44" value=" for river_fid, point_fid, distance in intersections_cursor" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="52.83" y="190" width="269.45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-45" target="ObFdqn2z3Y8Yrg7T5Qme-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-179" value="Nie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-55" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-180" value="Czy dystans jest większy niż dotychczasowy?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-55" vertex="1" connectable="0">
+          <mxGeometry x="0.4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-45" target="ObFdqn2z3Y8Yrg7T5Qme-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-188" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Tak&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-186" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-189" value="Przydziel do id punktu przecięcia id rzek,&lt;div&gt;&amp;nbsp;od której liczy się kilometraż oraz jego wartość&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=13;fontStyle=2" parent="DjqqoVac2A6PhSarZKK_-186" vertex="1" connectable="0">
+          <mxGeometry x="0.66" relative="1" as="geometry">
+            <mxPoint y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-45" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;point_fid&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;not in inter_mileages&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="82.55999999999995" y="307.5" width="210" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-46" target="ObFdqn2z3Y8Yrg7T5Qme-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="505.53999999999996" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-46" value="inter_mileages[point_fid] = {&quot;main&quot;: river_fid, &#xa;&quot;distance&quot;: distance}" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="412.53999999999996" y="257.5" width="186.63" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.518;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-48" target="ObFdqn2z3Y8Yrg7T5Qme-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-183" value="Nie" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-59" vertex="1" connectable="0">
+          <mxGeometry x="-0.85" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-191" value="&lt;span&gt;&lt;span&gt;Przydziel id rzeki&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;do rzeki pochodnej danego punktu przecięcia&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-59" vertex="1" connectable="0">
+          <mxGeometry x="0.1969" y="-1" relative="1" as="geometry">
+            <mxPoint x="92" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-48" target="ObFdqn2z3Y8Yrg7T5Qme-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-182" value="Tak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-61" vertex="1" connectable="0">
+          <mxGeometry x="-0.7" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-190" value="&lt;span&gt;&lt;span&gt;Zamień id rzek i przydziel nową odległość&amp;nbsp;&lt;/span&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=13;fontStyle=2" parent="ObFdqn2z3Y8Yrg7T5Qme-61" vertex="1" connectable="0">
+          <mxGeometry x="0.4659" y="2" relative="1" as="geometry">
+            <mxPoint x="59" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-48" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if distance &amp;gt; inter_mileages[point_fid&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; font-size: 14px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;][&quot;distance&quot;]:&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="70" y="460" width="235.11" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-50" target="ObFdqn2z3Y8Yrg7T5Qme-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="682.54" y="595" />
+              <mxPoint x="682.54" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-50" value="inter_mileages[point_fid][&quot;tributary&quot;] = river_fid" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="332.53999999999996" y="570" width="319.99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="SA2zn3zcyIi2AlwyKrgm-29" source="ObFdqn2z3Y8Yrg7T5Qme-49" target="ObFdqn2z3Y8Yrg7T5Qme-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="292.53999999999974" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="682.54" y="445" />
+              <mxPoint x="682.54" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-49" value="inter_mileages[point_fid] =&#xa;{&quot;main&quot;: river_fid,&#xa;&quot;tributary&quot;: inter_mileages[point_fid][&quot;main&quot;],&#xa;&quot;distance&quot;: distance}" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="SA2zn3zcyIi2AlwyKrgm-29" vertex="1">
+          <mxGeometry x="342.53999999999996" y="400" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-56" target="SA2zn3zcyIi2AlwyKrgm-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-196" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dodaj pole z kilometrażem od punktu ujścia do tabeli z kilometrażem&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-59" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-56" value="features_to_locate_mileages = distance_from_begining( rivernet, &#xa;features_to_locate, distance_field, tolerance=tolerance) " style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="195" y="2842" width="490" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-58" target="SA2zn3zcyIi2AlwyKrgm-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-197" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dodaj pole ze ścieżką po id rzek od punku,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;dla którego obliczany jest kilometraż,&amp;nbsp; do punktu ujścia rzeki głównej&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SA2zn3zcyIi2AlwyKrgm-65" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-58" value="arcpy.management.CalculateField&#xa;(in_table=features_to_locate_mileages,&#xa;field=full_distance_field,&#xa;        field_type=&quot;DOUBLE&quot;,&#xa;expression=0,&#xa;expression_type=&quot;PYTHON3&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="287.46999999999997" y="2972" width="305.01" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="1" source="SA2zn3zcyIi2AlwyKrgm-63" target="lJ1LMm3i_Ab_FU852zH7-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-6" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dla każdego rekordu w tabeli z kilometrażem punktów zainteresowania&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-5" vertex="1" connectable="0">
+          <mxGeometry x="0.65" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SA2zn3zcyIi2AlwyKrgm-63" value="arcpy.management.CalculateField&#xa;(in_table=features_to_locate_mileages,&#xa;field=path_field,&#xa;        field_type=&quot;TEXT&quot;,&#xa;expression=&quot;&#39;&#39;&quot;,&#xa;expression_type=&quot;PYTHON3&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="287.48999999999995" y="3162" width="305.01" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-1" value="return features_to_locate_mileages" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="303.49999999999994" y="4342" width="273" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-2" value="&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;with arcpy.da.UpdateCursor(features_to_locate_mileages,&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [&quot;OID@&quot;, distance_field, &quot;LINE_FID&quot;, full_distance_field, path_field],&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; where_clause=f&quot;{distance_field} &amp;gt; 0&quot;) as points_cursor:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=100;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="40.01" y="3312" width="823.99" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-3" target="lJ1LMm3i_Ab_FU852zH7-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-205" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Przygotuj odpowienie zmienne&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.5" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-3" value="for fid, distance, river_id, _, _ in points_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="222" y="160" width="356" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-7" target="lJ1LMm3i_Ab_FU852zH7-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-201" value="Koniec pętli" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-203" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zaktualizuj wiersz z nowo obliczonymi danymi&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-35" vertex="1" connectable="0">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-7" target="lJ1LMm3i_Ab_FU852zH7-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-208" value="Pobierz dane&amp;nbsp;&lt;div&gt;z kilometrażem&amp;nbsp;&lt;div&gt;punktu przecięcia,&amp;nbsp;&lt;div&gt;który znajduje się&amp;nbsp;&lt;/div&gt;&lt;div&gt;na tej samej rzece,&amp;nbsp;&lt;/div&gt;&lt;div&gt;co punkt&amp;nbsp;&lt;/div&gt;&lt;div&gt;iterowanego wiersza&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="lJ1LMm3i_Ab_FU852zH7-43" vertex="1" connectable="0">
+          <mxGeometry x="-0.0935" y="3" relative="1" as="geometry">
+            <mxPoint x="-49" y="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-7" value="while True:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="161.99" y="512" width="128" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-10" value="next_river_rank = float(&quot;inf&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="116" y="280" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-13" target="lJ1LMm3i_Ab_FU852zH7-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-13" value="current_path = [str(river_id)]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="115.99000000000001" y="430" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-12" value="current_river_id = river_id" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="115.99000000000001" y="380" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-11" value="full_distance = distance" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="115.99000000000001" y="330" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-16" target="lJ1LMm3i_Ab_FU852zH7-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-207" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Czy&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;wiersz&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;isneje?&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="lJ1LMm3i_Ab_FU852zH7-20" vertex="1" connectable="0">
+          <mxGeometry x="0.2" y="30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-16" value="current_row = [row for row in inter_mileages if row[-1] == current_river_id]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="280" y="600" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-19" target="lJ1LMm3i_Ab_FU852zH7-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-199" value="&lt;span&gt;Nie&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="lJ1LMm3i_Ab_FU852zH7-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.75" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-209" value="Pozyskaj z wiersza&lt;div&gt;&amp;nbsp;poszczególne dane&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=13;fontStyle=2" parent="lJ1LMm3i_Ab_FU852zH7-28" vertex="1" connectable="0">
+          <mxGeometry x="0.4106" y="-3" relative="1" as="geometry">
+            <mxPoint x="37" y="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-19" target="lJ1LMm3i_Ab_FU852zH7-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-198" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Tak&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-38" vertex="1" connectable="0">
+          <mxGeometry x="-0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-202" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wyjdź&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;z pętli&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-38" vertex="1" connectable="0">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-19" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if not current_row:&lt;/b&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="569.99" y="582.5" width="180.01" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-24" target="lJ1LMm3i_Ab_FU852zH7-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-24" value="break" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="729.99" y="340" width="80.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-27" target="lJ1LMm3i_Ab_FU852zH7-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-210" value="Dodaj dystans od punktu do zlokalizowania&amp;nbsp;&lt;div&gt;do całkowitej długości.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Dodaj id następnej rzeki,&amp;nbsp;&lt;/div&gt;&lt;div&gt;do której wpada rzeka z iterowanym id, do ścieżki.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Przesuń wskaźnik z id na id następnej rzeki.&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontSize=13;fontStyle=2" parent="DjqqoVac2A6PhSarZKK_-206" vertex="1" connectable="0">
+          <mxGeometry x="-0.2545" y="-3" relative="1" as="geometry">
+            <mxPoint x="13" y="67" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-27" value="inter_distance, next_river_id, current_river_id = current_row[0]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="279.99" y="705" width="330.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-29" value="full_distance += inter_distance" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="129.99" y="790" width="260.01" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-31" value="current_path.append(str(next_river_id))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="130" y="840" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-32" target="lJ1LMm3i_Ab_FU852zH7-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="915" />
+              <mxPoint x="110" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-32" value="current_river_id = next_river_id" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="130" y="890" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lJ1LMm3i_Ab_FU852zH7-2" source="lJ1LMm3i_Ab_FU852zH7-34" target="lJ1LMm3i_Ab_FU852zH7-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="534" y="280" />
+              <mxPoint x="770" y="280" />
+              <mxPoint x="770" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-34" value="points_cursor.updateRow&#xa;([fid, distance, river_id, &#xa;full_distance, &quot;,&quot;.join(current_path)])" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lJ1LMm3i_Ab_FU852zH7-2" vertex="1">
+          <mxGeometry x="399.99" y="300" width="267.99" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lJ1LMm3i_Ab_FU852zH7-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lJ1LMm3i_Ab_FU852zH7-3" target="lJ1LMm3i_Ab_FU852zH7-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="99.99000000000001" y="3497" />
+              <mxPoint x="99.99000000000001" y="4367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-200" value="Koniec pętli" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="lJ1LMm3i_Ab_FU852zH7-37" vertex="1" connectable="0">
+          <mxGeometry x="-0.8" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-212" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Zwróć kilometraż&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="lJ1LMm3i_Ab_FU852zH7-37" vertex="1" connectable="0">
+          <mxGeometry x="0.79" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-87" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;with arcpy.da.SearchCursor(main_rivers, [&quot;OID@&quot;, &quot;SHAPE@&quot;]) as main_river_cursor:&lt;/b&gt;&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=70;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="133" y="-990" width="650" height="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-90" target="uciwNBq3yjPR59OiZqfE-91" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-160" value="Dla każdej rzeki głównej" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-40" vertex="1" connectable="0">
+          <mxGeometry x="-0.09" y="4" relative="1" as="geometry">
+            <mxPoint x="52" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-90" value="main_rivers_to_reverse_ids = []" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="200.13" y="130" width="256.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-91" target="uciwNBq3yjPR59OiZqfE-92" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="231.38" y="330" />
+              <mxPoint x="348.38" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-161" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dokonaj selekcji iterowanej rzeki głównej&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-1" vertex="1" connectable="0">
+          <mxGeometry x="0.1339" y="1" relative="1" as="geometry">
+            <mxPoint x="-54" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-91" value="for fid, rank in river_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="113.38" y="240" width="236" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-92" target="uciwNBq3yjPR59OiZqfE-94" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-162" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Wybierz punkt reprezentujący ujście zlewni,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;który przecina się z iterowaną rzeką główną&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-92" value="current_main_river = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=rivernet,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;where_clause=f&quot;FID = {fid}&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="123.38" y="350" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-94" target="uciwNBq3yjPR59OiZqfE-96" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-163" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pobierz współrzędne punktu, jeśli istnieje&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="uciwNBq3yjPR59OiZqfE-107" vertex="1" connectable="0">
+          <mxGeometry x="0.3765" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-94" value="current_pour_point = arcpy.management.SelectLayerByLocation&#xa;(in_layer=pour_points,&#xa;select_features=current_main_river,&#xa;overlap_type=&quot;INTERSECT&quot;,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;search_distance=&quot;0 Meters&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="123.38" y="521" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-95" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp;with arcpy.da.SearchCursor(&lt;br&gt;current_pour_point, [&quot;SHAPE@XY&quot;]&lt;br&gt;) as point_cursor:&lt;/b&gt;&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=100;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="198.38" y="680" width="300" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-101" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;try:&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="uciwNBq3yjPR59OiZqfE-95" vertex="1">
+          <mxGeometry x="15" y="170" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-96" value="point_shape = next(point_cursor)[0]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-101" vertex="1">
+          <mxGeometry x="6.75" y="40" width="256.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-102" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;except &lt;i&gt;StopIteration &lt;/i&gt;as e:&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="uciwNBq3yjPR59OiZqfE-95" vertex="1">
+          <mxGeometry x="15" y="270" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-103" value="continue" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-102" vertex="1">
+          <mxGeometry x="85" y="31" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-113" value="river_first_point = (shape.firstPoint.X, shape.firstPoint.Y)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="255" y="1080" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-114" target="uciwNBq3yjPR59OiZqfE-115" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-166" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Oblicz odległość od punktu ujścia do punktów krańcowych rzeki głównej&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="uciwNBq3yjPR59OiZqfE-120" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-114" value="river_last_point = (shape.lastPoint.X, shape.lastPoint.Y)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="255" y="1140" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-115" value="pour_point_river_start_point_distance = calculate_distance(&#xa;*point_shape, *river_first_point)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="195" y="1260" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-116" target="uciwNBq3yjPR59OiZqfE-112" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-167" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Czy punkt ujścia jest bliżej ostatniego punktu rzeki głównej?&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-7" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-116" value="pour_point_river_last_point_distance = calculate_distance(&#xa;*point_shape, *river_last_point)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="195" y="1320" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-96" target="uciwNBq3yjPR59OiZqfE-113" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="143.38" y="915" />
+              <mxPoint x="143.38" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-165" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pobierz pierwszy&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&amp;nbsp;i ostatni punkt&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;rzeki głównej&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="ObFdqn2z3Y8Yrg7T5Qme-3" vertex="1" connectable="0">
+          <mxGeometry x="0.4336" y="-1" relative="1" as="geometry">
+            <mxPoint x="41" y="29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-112" target="uciwNBq3yjPR59OiZqfE-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="627" y="1500" />
+              <mxPoint x="627" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-169" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Nie&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.95" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-112" target="uciwNBq3yjPR59OiZqfE-117" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-168" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dodaj id rzeki do listy z id rzek do odwrócenia&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-6" vertex="1" connectable="0">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-172" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Tak&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-112" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if pour_point_river_start_point_distance &amp;gt; pour_point_river_last_point_distance:&lt;/b&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="149.9999999999999" y="1430" width="400" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-117" target="uciwNBq3yjPR59OiZqfE-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="627" y="1680" />
+              <mxPoint x="627" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uciwNBq3yjPR59OiZqfE-117" value="main_rivers_to_reverse_ids.append(str(fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="uciwNBq3yjPR59OiZqfE-87" vertex="1">
+          <mxGeometry x="195" y="1660" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="uciwNBq3yjPR59OiZqfE-87" source="uciwNBq3yjPR59OiZqfE-103" target="uciwNBq3yjPR59OiZqfE-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="627" y="1006" />
+              <mxPoint x="627" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uciwNBq3yjPR59OiZqfE-91" target="SA2zn3zcyIi2AlwyKrgm-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="194" y="-725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-173" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Koniec&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;pętli&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-39" vertex="1" connectable="0">
+          <mxGeometry x="-0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ObFdqn2z3Y8Yrg7T5Qme-51" target="SA2zn3zcyIi2AlwyKrgm-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-193" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Usuń pliki tymczasowe&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-56" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-51" value="inter_mileages = [&#xa;(v[&quot;distance&quot;], v[&quot;main&quot;], v[&quot;tributary&quot;]) &#xa;for v in inter_mileages.values()]" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="304.97999999999996" y="2542" width="269.99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ObFdqn2z3Y8Yrg7T5Qme-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ObFdqn2z3Y8Yrg7T5Qme-44" target="ObFdqn2z3Y8Yrg7T5Qme-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="129.99" y="1947" />
+              <mxPoint x="129.99" y="2472" />
+              <mxPoint x="439.98999999999995" y="2472" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-194" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Zamień słownik na listę z wartościami&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ObFdqn2z3Y8Yrg7T5Qme-66" vertex="1" connectable="0">
+          <mxGeometry x="0.55" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-101" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Obliczanie kilometrażu punktów na rzece w sieciach rzecznych&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="146.03" y="-2690" width="630" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-104" target="DjqqoVac2A6PhSarZKK_-110" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-103" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Jeżeli podano nazwę pola z rangami rzek&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-102" vertex="1" connectable="0">
+          <mxGeometry x="0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-104" value="calculate_rivernet_mileage(&#xa;    rivernet: str | arcpy.Result,&#xa;    features_to_locate: str | arcpy.Result, &#xa;    pour_points: str | arcpy.Result,&#xa;    output_name: str = &quot;&quot;,&#xa;    rank_field: str = &quot;&quot;,&#xa;    tolerance: int = 0.001,&#xa;) -&gt; arcpy.Result:" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" parent="1" vertex="1">
+          <mxGeometry x="285.0100000000001" y="-2610" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-110" target="DjqqoVac2A6PhSarZKK_-113" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-106" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Przydziel nazwę do pola&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;z rangami rzek&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="DjqqoVac2A6PhSarZKK_-105" vertex="1" connectable="0">
+          <mxGeometry x="0.35" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-107" value="Tak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="DjqqoVac2A6PhSarZKK_-105" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-110" target="DjqqoVac2A6PhSarZKK_-122" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="293.04" y="-2090" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="342" y="-2300" />
+              <mxPoint x="342" y="-2040" />
+              <mxPoint x="447" y="-2040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-109" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Nie&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-108" vertex="1" connectable="0">
+          <mxGeometry x="-0.7" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-110" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;if not rank_field:&lt;/b&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="362.48000000000013" y="-2340" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-113" target="DjqqoVac2A6PhSarZKK_-115" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-112" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Przydziel rangi rzekom&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-111" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-113" value="rank_field = &quot;Rank&quot;" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="489.11" y="-2260" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="z-69w3F6jRo2SjVhbUeY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="DjqqoVac2A6PhSarZKK_-115" target="DjqqoVac2A6PhSarZKK_-122">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="604" y="-2040" />
+              <mxPoint x="447" y="-2040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-115" value="rank_rivers(rivernet, rank_field)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="489.11" y="-2140" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-122" target="DjqqoVac2A6PhSarZKK_-127" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-121" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dla każdej rzeki&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-120" vertex="1" connectable="0">
+          <mxGeometry x="-0.0667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-122" value="river_fid_by_ranks = defaultdict(list)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="318.64999999999986" y="-1900" width="256.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-127" target="DjqqoVac2A6PhSarZKK_-132" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283.89999999999986" y="-1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-124" value="Oblicz minimalną rangę rzeki w sieci rzecznej" style="edgeLabel;html=1;align=right;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-123" vertex="1" connectable="0">
+          <mxGeometry y="50" relative="1" as="geometry">
+            <mxPoint x="41" y="-60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-127" target="DjqqoVac2A6PhSarZKK_-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-126" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dodaj id rzeki do listy rzek z tą samą rangą&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-125" vertex="1" connectable="0">
+          <mxGeometry x="0.3" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-127" value="for fid, rank in river_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="328.89999999999986" y="-1785" width="236" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-129" target="DjqqoVac2A6PhSarZKK_-127" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679.8999999999999" y="-1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-129" value="river_fid_by_ranks[rank].append(str(fid))" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="536.8999999999999" y="-1693" width="285.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-132" target="DjqqoVac2A6PhSarZKK_-143" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-131" value="&lt;font&gt;&lt;span&gt;Stwórz listę do przypisania id rzek głównych&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="DjqqoVac2A6PhSarZKK_-130" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-132" value="minimum_rank = min(river_fid_by_ranks.keys())" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="168.39999999999986" y="-1720" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-135" target="DjqqoVac2A6PhSarZKK_-146" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="398.52" y="-1325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-134" value="&lt;i&gt;Jeżeli obecna &lt;font style=&quot;font-size: 10px;&quot;&gt;ranga&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i&gt;&amp;nbsp;jest rangą minimalną&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-133" vertex="1" connectable="0">
+          <mxGeometry x="-0.151" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-135" value="for rank, fids in river_fid_by_ranks.items():" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="111.64999999999986" y="-1500" width="343.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-146" target="DjqqoVac2A6PhSarZKK_-145" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="608.52" y="-1325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-137" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Tak&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-136" vertex="1" connectable="0">
+          <mxGeometry x="-0.5" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-138" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dodaj id rzek do listy z id rzek głównych&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-136" vertex="1" connectable="0">
+          <mxGeometry x="0.7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-146" target="DjqqoVac2A6PhSarZKK_-135" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="503.52" y="-1430" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="503.03" y="-1475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-140" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Nie&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-139" vertex="1" connectable="0">
+          <mxGeometry x="-0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-143" target="DjqqoVac2A6PhSarZKK_-135" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-142" value="Dla każdej rangi i przypisanej jej listy z id rzek" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=2" parent="DjqqoVac2A6PhSarZKK_-141" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-143" value="main_rivers_ids = []" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="168.39999999999986" y="-1610" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-145" target="DjqqoVac2A6PhSarZKK_-135" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="712.8999999999999" y="-1475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-145" value=" main_rivers_ids.extend(fids)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="604.1499999999999" y="-1460" width="218.25" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-146" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&amp;nbsp;if rank == minimum_rank:&lt;/b&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="378.64999999999986" y="-1320" width="254.38" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-152" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 19px;&quot;&gt;with arcpy.da.SearchCursor(rivernet&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 19px;&quot;&gt;, &lt;/b&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 19px;&quot;&gt;&lt;b&gt;[&quot;OID@&quot;, rank_field]&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 19px;&quot;&gt;) as &lt;/b&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;river_cursor&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 19px;&quot;&gt;:&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="52.00999999999999" y="-2010" width="800" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DjqqoVac2A6PhSarZKK_-153" target="uciwNBq3yjPR59OiZqfE-90" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-159" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Stwórz listę do przechowywania id rzek głównych do odwrócenia&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-157" vertex="1" connectable="0">
+          <mxGeometry x="0.6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-153" value="main_rivers = arcpy.management.SelectLayerByAttribute&#xa;(in_layer_or_view=rivernet,&#xa;selection_type=&quot;NEW_SELECTION&quot;,&#xa;where_clause=f&quot;FID IN ({&#39;,&#39;.join(main_rivers_ids)})&quot;)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;fontSize=13;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="214.52999999999997" y="-1110" width="493" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="DjqqoVac2A6PhSarZKK_-153" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="219" y="-1150" />
+              <mxPoint x="461" y="-1150" />
+            </Array>
+            <mxPoint x="218.55499999999986" y="-1470" as="sourcePoint" />
+            <mxPoint x="500" y="-1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DjqqoVac2A6PhSarZKK_-155" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Dokonaj selekcji rzek głównych&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DjqqoVac2A6PhSarZKK_-154" vertex="1" connectable="0">
+          <mxGeometry x="0.45" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xftiZl29SQ8UgEw2r8R1" name="Points From Distance">
+    <mxGraphModel dx="2547" dy="2142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="foqkuOCveg83ZZbYy00Z-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="foqkuOCveg83ZZbYy00Z-3" target="foqkuOCveg83ZZbYy00Z-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-2" value="&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Stwórz pustą warstwę punktową z odwzorowaniem takim,&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;jaki ma podana warstwa liniowa reprezentująca rzeki&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="foqkuOCveg83ZZbYy00Z-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-3" value="points_from_mileage(&#xa;mileage: str | arcpy.Result,&#xa;rivernet: str | arcpy.Result,&#xa;river_id_field: str,&#xa;distance_field: str&#xa;) -&gt; arcpy.Result:" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=13;fontStyle=1;fillColor=#fa6800;fontColor=#FFFFFF;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="350.49" y="-570" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="foqkuOCveg83ZZbYy00Z-6" target="foqkuOCveg83ZZbYy00Z-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-5" value="&lt;span style=&quot;font-size: 13px; font-style: italic;&quot;&gt;Pozyskaj punkty startowe i końcowe obiektów warstwy liniowej&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="foqkuOCveg83ZZbYy00Z-4">
+          <mxGeometry x="0.0069" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-6" value="mileage_points = arcpy.management.CreateFeatureclass&#xa;(out_name=&quot;mileage_points&quot;,&#xa;        geometry_type=&quot;POINT&quot;,&#xa;        spatial_reference=arcpy.Describe(rivernet).spatialReference)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="249.12" y="-360" width="442.75" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Punkty z kilometrażu&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="356" y="-630" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="foqkuOCveg83ZZbYy00Z-10" target="foqkuOCveg83ZZbYy00Z-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-9" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wybierz wszystkie te punkty początkowe i końcowe,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;które nie są wierzchołkami wiszącymi&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="foqkuOCveg83ZZbYy00Z-8">
+          <mxGeometry x="-0.0407" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-10" value="arcpy.management.AddField&#xa;(in_table=mileage_points,&#xa;field_name=river_id_field,&#xa;field_type=&quot;TEXT&quot;)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="371.62" y="-200" width="200.38" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="foqkuOCveg83ZZbYy00Z-13" target="toc3BD8OjyqQbxpY5q-V-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-32" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Pozyskaj liste id rzek i dystansów&lt;/i&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-31">
+          <mxGeometry x="0.7001" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-13" value="arcpy.management.AddField&#xa;(in_table=mileage_points,&#xa;field_name=distance_field,&#xa;field_type=&quot;DOUBLE&quot;)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="371.41" y="-10" width="199.19" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="foqkuOCveg83ZZbYy00Z-18" value="return mileage_points" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1;fontColor=light-dark(#FFFFFF,#FFFFFF);fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="362.77" y="1030" width="202" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nTrElbo1OdDz_dR31HIv-1" target="foqkuOCveg83ZZbYy00Z-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1000" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="425" />
+              <mxPoint x="60" y="1020" />
+              <mxPoint x="464" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-33" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Koniec pętli&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-29">
+          <mxGeometry x="-0.8" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-41" value="&lt;i&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Zwróć wygenerowane punkty&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-29">
+          <mxGeometry x="0.6" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="toc3BD8OjyqQbxpY5q-V-1" value="&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp;with (arcpy.da.SearchCursor(rivernet, [river_id_field, &quot;SHAPE@&quot;]) as current_river_cursor,&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; arcpy.da.SearchCursor(mileage, [river_id_field, distance_field]) as mileage_cursor,&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; arcpy.da.InsertCursor(mileage_points, [river_id_field, &quot;SHAPE@&quot;, distance_field]) as mileage_points_cursor):&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=90;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="-52.45" y="120" width="1032.45" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="toc3BD8OjyqQbxpY5q-V-19" target="nTrElbo1OdDz_dR31HIv-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dla każdego id rzeki i jej geometrii&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="toc3BD8OjyqQbxpY5q-V-19" value="river_distances = [(river_id, distance) for river_id, distance in mileage_cursor]" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="toc3BD8OjyqQbxpY5q-V-1">
+          <mxGeometry x="256.08" y="160" width="535" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="nTrElbo1OdDz_dR31HIv-1" target="nTrElbo1OdDz_dR31HIv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-35" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wybierz te odległości, które dotyczą iterowanej rzeki&lt;/i&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-1" value="for river_id, river_shape in current_river_cursor:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="toc3BD8OjyqQbxpY5q-V-1">
+          <mxGeometry x="331.58" y="280" width="383.99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="nTrElbo1OdDz_dR31HIv-4" target="nTrElbo1OdDz_dR31HIv-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-36" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dla każdej odległości&amp;nbsp;&lt;/i&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-4" value="current_river_distances = [distance for rid, distance in river_distances if river_id == rid]" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="toc3BD8OjyqQbxpY5q-V-1">
+          <mxGeometry x="236.61999999999998" y="410" width="572" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="nTrElbo1OdDz_dR31HIv-8" target="nTrElbo1OdDz_dR31HIv-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="575" />
+              <mxPoint x="870" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-40" value="&lt;i&gt;&lt;font&gt;Koniec pętli&lt;/font&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;fontSize=13;" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-23">
+          <mxGeometry x="-0.6" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="nTrElbo1OdDz_dR31HIv-8" target="nTrElbo1OdDz_dR31HIv-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-37" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Do warstwy punktowej dodaj rekord z id iterowanej rzeki,&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;nowo obliczoną geometrią punktu oraz podaną odległością&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nTrElbo1OdDz_dR31HIv-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-8" value="for distance in current_river_distances:" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="toc3BD8OjyqQbxpY5q-V-1">
+          <mxGeometry x="362.37" y="550" width="322.42" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="toc3BD8OjyqQbxpY5q-V-1" source="nTrElbo1OdDz_dR31HIv-10" target="nTrElbo1OdDz_dR31HIv-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="322" y="725" />
+              <mxPoint x="322" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTrElbo1OdDz_dR31HIv-10" value="mileage_points_cursor.insertRow&#xa;([river_id, &#xa;river_shape.positionAlongLine(distance),&#xa; distance])" style="whiteSpace=wrap;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="toc3BD8OjyqQbxpY5q-V-1">
+          <mxGeometry x="366.72999999999996" y="680" width="313.7" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
